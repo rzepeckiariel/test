@@ -1,8 +1,5 @@
 language C
 
-before_install:
-  - test -n $CC && unset CC
-
 install: make get-deps
 
 compiler:
