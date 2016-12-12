@@ -1,11 +1,14 @@
-language C
+language: C
 
-install make get-deps
+install: make get-deps
 
-compiler
+compiler:
   - gcc
 
-script scons
+script:
+  - mkdir build
+  - cd build
+  - cmake .. && make
 
-notifications
-  email false
+notifications:
+  email: false
