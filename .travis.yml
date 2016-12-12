@@ -1,11 +1,11 @@
 language C
 
-install: make get-deps
+install make get-deps
 
-compiler:
+compiler
   - gcc
 
-script: scons
+script scons
 
-notifications:
+notifications
   email: false
